@@ -1,13 +1,12 @@
 package jogo2d;
 
-import jogo2d.motor.Painel;
+import jogo2d.motor.Window;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Painel painel = new Painel();
-		
-		painel.startGameThread();
+		Window window = Window.get();	
+		window.run();
 	}
 
 }
